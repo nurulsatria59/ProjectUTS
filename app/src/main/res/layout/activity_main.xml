@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradasi"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:textColor="#ffffff"
+        />
+    
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/txtRegister"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/curve"
+        >
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:text="@string/name"
+        android:textColor="#ffffff"
+        />
+
+        <TextView
+            android:id="@+id/txtAge"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="40dp"
+            android:textSize="30sp"
+            android:text="@string/age"
+            android:textColor="#ffffff"
+            />
+
+        <EditText
+            android:id="@+id/EditName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@id/txtName"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/curve_edit"
+            android:layout_toRightOf="@id/txtName" />
+
+        <EditText
+            android:id="@+id/EditAge"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/txtAge"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/curve_edit"
+            android:layout_toRightOf="@id/txtAge" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/sign_up"
+        android:textColor="#000000"
+        android:background="@drawable/curve_edit"
+        />
+
+    <Button
+        android:id="@+id/Cancel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/cancel"
+        android:textColor="#000000"
+        android:background="@drawable/curve_edit"
+        />
+</RelativeLayout>

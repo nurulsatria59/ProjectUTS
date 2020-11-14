@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProjectUTS</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="cancel">CANCEL</string>
+</resources>
